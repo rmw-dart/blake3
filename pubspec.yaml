@@ -7,6 +7,7 @@ environment:
 
 ffigen:
   output: 'blake3.c.dart'
+  name: cBlake3
   headers:
     entry-points:
       - 'blake3/c/blake3.h'
