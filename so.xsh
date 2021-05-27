@@ -10,6 +10,9 @@ trace on
 DIR = dirname(abspath(__file__))
 DIST=f"{DIR}/dist/{platform.system().lower()}/{platform.machine()}"
 
+rm -rf so
+ln -s @(DIST) so
+
 mkdir -p @(DIST)
 
 cd @(DIR)/blake3/c
