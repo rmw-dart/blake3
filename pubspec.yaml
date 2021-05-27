@@ -1,0 +1,17 @@
+name: blake3
+description: blake3 for dart on c ffi
+version: 0.0.1
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+ffigen:
+  output: 'blake3.c.dart'
+  headers:
+    entry-points:
+      - 'blake3/c/blake3.h'
+
+dev_dependencies:
+  pedantic: ^1.10.0
+  ffigen:
+
